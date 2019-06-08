@@ -1,11 +1,14 @@
 import org.junit.*;
 
 public class TestSuite1 {
+
+    @Rule
+    public Retry retry = new Retry(3);
+
     @BeforeClass
     public static void beforeClass() {
         System.out.println("I'm beforeClass method in TestSuite 1!");
     }
-
 
     @Before
     public void before() {
@@ -15,6 +18,7 @@ public class TestSuite1 {
     @Test
     public void test1() {
         System.out.println("I'm test 1 in TestSuite 1!");
+        Assert.assertTrue(false);
     }
 
     @Test
