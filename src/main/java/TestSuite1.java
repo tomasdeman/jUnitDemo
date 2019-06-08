@@ -3,33 +3,33 @@ import org.junit.*;
 public class TestSuite1 {
     @BeforeClass
     public static void beforeClass() {
-        System.out.println("I'm beforeClass method!");
+        System.out.println("I'm beforeClass method in TestSuite 1!");
     }
 
 
     @Before
     public void before() {
-        System.out.println("I'm before method!");
+        System.out.println("I'm before method in TestSuite 1!");
     }
 
     @Test
     public void test1() {
-        System.out.println("I'm test 1!");
+        System.out.println("I'm test 1 in TestSuite 1!");
     }
 
     @Test
     public void test2() {
-        System.out.println("I'm test 2!");
+        System.out.println("I'm test 2 in TestSuite 1!");
     }
 
     @After
     public void after() {
-        System.out.println("I am after method!");
+        System.out.println("I'm after method in TestSuite 1!");
     }
 
     @AfterClass
     public static void afterClass() {
-        System.out.println("I'm afterClass method!");
+        System.out.println("I'm afterClass method in TestSuite 1!");
     }
 
 }
